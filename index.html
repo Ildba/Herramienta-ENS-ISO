@@ -1,0 +1,80 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación ENS e ISO27001</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Incluir imagen -->
+        <div class="smaller-height-image-container">
+            <img src="inicio.jpg" alt="Imagen estática" class="img-fluid smaller-height-image mb-4">
+        </div>
+
+        
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="inicio-tab" data-toggle="tab" href="#inicio" role="tab" aria-controls="inicio" aria-selected="true">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comparacion-tab" data-toggle="tab" href="#comparacion" role="tab" aria-controls="comparacion" aria-selected="false">Comparación ENS e ISO</a>
+            </li>
+        </ul>
+
+        <!-- Contenido de la tabla -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Inicio Tabla -->
+            <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">
+                <div class="mt-4 text-left">
+                    <h2>Bienvenido</h2>
+                    <p>Esta herramienta está diseñada para guiar en la implantación del Esquema Nacional de Seguridad (Nivel Medio) a través de un Sistema de Gestión de Seguridad de la Información basado en la ISO27001. Seleccione la pestaña "Comparación ENS e ISO" para comenzar.</p>
+                    <p>A continuación, puede consultar información relacionada con el Esquema Nacional de Seguridad en los siguientes links:</p>
+                    <ul>
+                        <li><a href="https://www.ccn-cert.cni.es/es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/518-ccn-stic-808-verificacion-del-cumplimiento-de-las-medidas-en-el-ens/file?format=html">Guía CCN-STIC 808 sobre la verificación del cumplimiento del ENS</a></li>
+                        <li><a href="https://www.ccn-cert.cni.es/es/800-guia-esquema-nacional-de-seguridad/543-ccn-stic-825-ens-iso27001/file.html">Guía CCN-STIC 825 sobre el Esquema Nacional de Seguridad y la Certificación 27001</a></li>
+                        <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191" target="_blank">Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tabla comparativa ENS e ISO -->
+            <div class="tab-pane fade" id="comparacion" role="tabpanel" aria-labelledby="comparacion-tab">
+                <div class="mt-4">
+                    <div class="form-group">
+                        <label for="medidaENS">Selecciona una medida del ENS:</label>
+                        <select class="form-control" id="medidaENS">
+                            <option value="">--Selecciona una medida--</option>
+                        </select>
+                    </div>
+
+                    <table class="table table-striped mt-4" id="comparison-table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Medida ENS</th>
+                                <th>Control ISO27001</th>
+                                <th>Compatibilidad entre normas</th>
+                                <th class="doc-column">Documentación necesaria</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
